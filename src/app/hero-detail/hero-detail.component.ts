@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HEROES } from '../mock-heroes';
 import { Hero } from '../hero';
@@ -11,7 +11,15 @@ import { Hero } from '../hero';
 export class HeroDetailComponent implements OnInit {
   hero: Hero;
   private temp: any;
+  newPower: string;
   constructor(private route: ActivatedRoute) { }
+  addPower() {
+    this.hero.powers.push(this.newPower);
+    this.newPower = '';
+  }
+  trackByIndex(index: number, obj: any) {
+    return index;
+  }
 
   ngOnInit() {
     this.temp = this.route.params.subscribe(params => {
