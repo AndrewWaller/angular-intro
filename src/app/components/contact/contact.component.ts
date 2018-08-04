@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CONTACTS } from '../mock-contacts';
-import { Contact } from '../contact';
+import { CONTACTS } from '../../mock-contacts';
+import { Contact } from '../../classes/contact';
 
 @Component({
   selector: 'app-contact',

@@ -1,4 +1,4 @@
-import { Todo } from './todo';
+import { Todo } from './classes/todo';
 
 export const TODOS: Todo[] = [
   { id: 1, task: 'Take out the trash', status: false, trash: false },

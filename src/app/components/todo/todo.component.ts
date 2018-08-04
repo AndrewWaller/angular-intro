@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TODOS } from '../mock-todos';
-import { Todo } from '../todo';
+import { TODOS } from '../../mock-todos';
+import { Todo } from '../../classes/todo';
 
 @Component({
   selector: 'app-todo',
